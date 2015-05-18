@@ -23,9 +23,9 @@ do
   fi
 done < ${base}/etc/kstat.conf
 
-if [ ! -z ${ival} ]
+if [ ! -z ${interval} ]
 then
-  cmd="${cmd} ${ival}"
+  cmd="${cmd} ${interval}"
   if [ ! -z ${repeat} ]
   then
     cmd="${cmd} ${repeat}"
