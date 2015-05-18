@@ -13,6 +13,9 @@ then
 fi
 BASE=$(basename "$0");
 
+(cd "$DST"; uudecode -p "$DIR/$BASE"|tar xf -)
+
+
 CONFFILE=$DST/tachyon-meter/etc/kstat.conf
 CONFFILE1=$DST/tachyon-meter/etc/tachyon.conf
 if [ ! -f $CONFFILE ]
