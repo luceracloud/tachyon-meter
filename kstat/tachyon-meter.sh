@@ -8,7 +8,7 @@ then
 fi
 
 svcprop_dflt() {
-  if [ "x${3}x" -eq "xx"]
+  if [ "x${3}x" -eq "xx" ]
   then
     if svcprop -p application/${1} ${app} 2> /dev/null > /dev/null
     then
