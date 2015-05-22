@@ -32,3 +32,9 @@ version:
 
 version_header:
 	true
+
+deps:
+	true
+
+test:
+	true
