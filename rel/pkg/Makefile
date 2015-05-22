@@ -6,7 +6,7 @@ BASENAME:=$(COMPONENT)-$(VERSION)$(SUFFIX)
 
 package:
 	cp install.sh $(BASENAME)
-	cd ../dist && tar -cf ../pkg/$(BASENAME).tar $(COMPONENT)
+	cd ../../dist && tar -cf ..../rel/pkg/$(BASENAME).tar $(COMPONENT)
 	uuencode $(BASENAME).tar $(BASENAME).tar >> $(BASENAME)
 	-rm $(BASENAME).gz $(BASENAME).tar
 	gzip -9 $(BASENAME)

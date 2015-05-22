@@ -25,7 +25,7 @@ gz: dist
 	(cd dist; tar zcf ../tachyon-meter.tgz tachyon-meter)
 
 package: gz
-	make -C pkg
+	make -C rel/pkg
 
 version:
 	echo "$(shell git symbolic-ref HEAD 2> /dev/null | cut -b 12-)-$(shell git log --pretty=format:'%h, %ad' -1)" > tachyon.version
