@@ -8,7 +8,7 @@ package:
 	cp install.sh $(BASENAME)
 	cd ../../dist && tar -cf ../rel/pkg/$(BASENAME).tar $(COMPONENT)
 	uuencode $(BASENAME).tar $(BASENAME).tar >> $(BASENAME)
-	-rm $(BASENAME).gz $(BASENAME).tar
+	-rm $(BASENAME).gz $(BASENAME).tar || true
 	gzip -9 $(BASENAME)
 
 clean:
