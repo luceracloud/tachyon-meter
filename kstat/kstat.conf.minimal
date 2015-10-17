@@ -2,6 +2,12 @@
 # CPU
 ##
 cpu:*:sys:*nsec*
+cpu_stat:::user
+cpu_stat:::idle
+cpu_stat:::intr
+cpu_stat:::iowait
+cpu_stat:::syscall
+cpu_stat:::kernel
 caps:*:cpucaps_zone_*:above_base_sec
 caps:*:cpucaps_zone_*:above_sec
 caps:*:cpucaps_zone_*:baseline
